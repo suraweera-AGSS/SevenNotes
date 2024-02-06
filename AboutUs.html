@@ -21,7 +21,6 @@
         </section>
     </main>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
-
     <script>
         function toggleDarkMode() {
             const body = document.body;
@@ -29,7 +28,6 @@
             const isDarkMode = body.classList.contains('dark-mode');
             localStorage.setItem('darkMode', isDarkMode);
         }
-
         document.addEventListener('DOMContentLoaded', function () {
             const body = document.body;
             const darkMode = localStorage.getItem('darkMode') === 'true';
