@@ -10,6 +10,7 @@
     <header>
         <h1>About Us</h1>
     </header>
+    
     <main>
         <section id="overview">
             <h2>Overview</h2>
@@ -20,7 +21,9 @@
             <p>At SevenNotes.lk, our mission is to make Sinhala music accessible to everyone, fostering a deep appreciation for the artistry, tradition, and emotion woven into each song. We strive to create a seamless and enjoyable experience for our users, offering a vast collection of songs along with features like lyrics, curated playlists, and more.</p>
         </section>
     </main>
+    
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    
     <script>
         function toggleDarkMode() {
             const body = document.body;
@@ -28,6 +31,7 @@
             const isDarkMode = body.classList.contains('dark-mode');
             localStorage.setItem('darkMode', isDarkMode);
         }
+        
         document.addEventListener('DOMContentLoaded', function () {
             const body = document.body;
             const darkMode = localStorage.getItem('darkMode') === 'true';
@@ -36,5 +40,6 @@
             }
         };
     </script>
+    
 </body>
 </html>
