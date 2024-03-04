@@ -48,7 +48,6 @@ body.dark-mode {
     background-color: #121212;
     color: #fff;
 }
-
 /* Toggle dark mode button */
 .dark-mode-toggle {
     position: fixed;
