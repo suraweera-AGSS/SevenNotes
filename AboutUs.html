@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SevenNotes.lk</title>
+    <link rel="stylesheet" href="AboutUs.css">
+  </head>
+  
+  <body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to SevenNotes.lk, your ultimate destination for exploring and enjoying the mesmerizing world of Sinhala music. We take pride in providing a platform that celebrates the rich cultural heritage of Sri Lanka through its diverse and enchanting musical landscape.</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>At SevenNotes.lk, our mission is to make Sinhala music accessible to everyone, fostering a deep appreciation for the artistry, tradition, and emotion woven into each song. We strive to create a seamless and enjoyable experience for our users, offering a vast collection of songs along with features like lyrics, curated playlists, and more.</p>
+        </section>
+    </main>
+    
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+    
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            const isDarkMode = body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+            const darkMode = localStorage.getItem('darkMode') === 'true';
+            if (darkMode) {
+                body.classList.add('dark-mode');
+            }
+        };
+    </script>
+    
+  </body>
+</html>
+
 
